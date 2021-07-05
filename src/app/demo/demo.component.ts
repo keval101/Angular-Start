@@ -10,6 +10,7 @@ export class DemoComponent{
   name = 'Angular';
   userName = '';
   allowNewServer = false;
+  uName = '';
 
   constructor(){
      setTimeout(() => {
@@ -18,7 +19,8 @@ export class DemoComponent{
   }
 
   show(){
-    alert('This button clicked !')
+    alert('This button clicked !');
+    this.uName = this.userName;
   }
 
   onInput(event: Event){
