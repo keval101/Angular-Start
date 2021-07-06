@@ -8,3 +8,7 @@
 <button class="btn btn-primary mt-3" [disabled]="username === '' " (click)="onClick()">Login</button>
 <button class="btn btn-warning ml-3 mt-3" (click)= "username = '' " >Reset</button>
 <button class="btn btn-danger mt-3 ml-3" (click)="onDelete()">Delete</button>
+
+<!-- ngfor -->
+<h2>All User List</h2>
+<p *ngFor = "let userList of users">{{userList}}</p>
