@@ -1,6 +1,10 @@
 <label for="name">Username </label>
 <input type="text" name='name' class="form-control" [(ngModel)]='username'>
-<p>{{username}}</p>
+<p [style.color]='textColor' *ngIf = 'nameAdd; else noUser' >Username is {{username}}</p>
+<ng-template #noUser>
+    <p>There is no user</p>
+</ng-template>
 
-<button class="btn btn-primary" [disabled]="username === '' ">Login</button>
-<button class="btn btn-warning ml-3" (click)= "username = '' ">Reset</button>
+<button class="btn btn-primary mt-3" [disabled]="username === '' " (click)="onClick()">Login</button>
+<button class="btn btn-warning ml-3 mt-3" (click)= "username = '' " >Reset</button>
+<button class="btn btn-danger mt-3 ml-3" (click)="onDelete()">Delete</button>

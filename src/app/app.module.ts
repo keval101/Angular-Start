@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { DemoComponent } from './demo/demo.component';
 import { TestBindingComponent } from './test-binding/test-binding.component';
+import { ServerComponent } from './server/server.component';
 
 
 @NgModule({
@@ -12,6 +13,7 @@ import { TestBindingComponent } from './test-binding/test-binding.component';
     AppComponent,
     DemoComponent,
     TestBindingComponent,
+    ServerComponent,
   ],
   imports: [
     BrowserModule,

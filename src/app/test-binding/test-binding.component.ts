@@ -7,6 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TestBindingComponent {
 
- username :string = ''
+ username :string = '';
+ textColor = 'red';
+ nameAdd = false;
 
+ onClick(){
+   this.nameAdd = true;
+ }
+ onDelete(){
+   this.nameAdd = false;
+ }
 }
