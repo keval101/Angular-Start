@@ -19,5 +19,6 @@ export class TestBindingComponent {
  }
  onDelete(){
    this.nameAdd = false;
+   this.users.pop()
  }
 }

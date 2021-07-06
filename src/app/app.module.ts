@@ -8,7 +8,6 @@ import { TestBindingComponent } from './test-binding/test-binding.component';
 import { ServerComponent } from './server/server.component';
 import { AssisgmentComponent } from './assisgment/assisgment.component';
 
-
 @NgModule({
   declarations: [
     AppComponent,

@@ -6,12 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./assisgment.component.css']
 })
 export class AssisgmentComponent {
-
+  
   showSecret = false;
-  log:number[] = [];
+  log:any[] = [];
 
   onToggleDisplay(){
     this.showSecret = !this.showSecret;
-    this.log.push(this.log.length + 1)
+    this.log.push(new Date())
   }
 }
