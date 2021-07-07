@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  serverElements = [];
+  serverElements = [{type:'server', name:'TestServer', content: 'Just test sever'}];
 
   onAddServer(serverData :{ serverName: string, serverContent: string}){ //data from serverCreated stored value
     this.serverElements.push({
@@ -23,4 +23,10 @@ export class AppComponent {
       content:blueprintData.serverContent
     })
   }
+
+  onDelete(){
+    this.serverElements.splice(0,1);
+  }
+
+
 }
