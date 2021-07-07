@@ -14,8 +14,9 @@
   <hr>
   <div class="row">
     <div class="col-12">
+      <button class="btn btn-primary mr-3" (click)= "onChange()">Change</button>
       <button class="btn btn-danger" (click)= "onDelete()">Delete</button>
-      <app-server-element *ngFor = " let serverElement of serverElements" [srvElement]="serverElement">
+      <app-server-element *ngFor = " let serverElement of serverElements" [srvElement]="serverElement" [name]="serverElement.name">
         <p>
           <strong *ngIf = "serverElement.type === 'server' " style="color: red">{{serverElement.content}}</strong>
           <em *ngIf = "serverElement.type === 'blueprint' " style="color: blue">{{serverElement.content}}</em>

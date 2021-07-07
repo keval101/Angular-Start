@@ -27,6 +27,9 @@ export class AppComponent {
   onDelete(){
     this.serverElements.splice(0,1);
   }
-
+  
+  onChange(){
+    this.serverElements[0].name = 'Changed';
+  }
 
 }
