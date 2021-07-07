@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   serverElements = [];
 
-  onAddServer(serverData :{ serverName: string, serverContent: string}){
+  onAddServer(serverData :{ serverName: string, serverContent: string}){ //data from serverCreated stored value
     this.serverElements.push({
       type:'server',
       name:serverData.serverName,
