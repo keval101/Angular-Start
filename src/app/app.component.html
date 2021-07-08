@@ -8,9 +8,10 @@
   <hr>
   <app-server></app-server>
   <br><br><br>
+  <h1 class="mb-4">Assisgment - 1</h1>
   <app-assisgment></app-assisgment> -->
 
-  <app-cockpit (serverCreated)="onAddServer($event)" (blueprintCreated)="onAddBlueprint($event)"></app-cockpit>
+  <!-- <app-cockpit (serverCreated)="onAddServer($event)" (blueprintCreated)="onAddBlueprint($event)"></app-cockpit>
   <hr>
   <div class="row">
     <div class="col-12">
@@ -20,8 +21,25 @@
         <p #contentParagraph>
           <strong *ngIf = "serverElement.type === 'server' " style="color: red">{{serverElement.content}}</strong>
           <em *ngIf = "serverElement.type === 'blueprint' " style="color: blue">{{serverElement.content}}</em>
-      </p>
+          <em>Hello</em>
+        </p>
       </app-server-element>
     </div>
+  </div> -->
+  <div class="row">
+    <div class="col-12">
+      <h1 class="mb-4">Assisgment - 2</h1>
+      <app-game-control (intervalFired) = 'onIntervalFired($event)'></app-game-control>
+    </div>
   </div>
+
+  <div class="row">
+    <div class="col-2">
+      <app-odd *ngFor="let odd of oddNumber" [oddNumber] = "odd"></app-odd>
+    </div>
+    <div class="col-2">
+      <app-even *ngFor="let even of evenNumber" [evenNumber] = "even"></app-even>
+    </div>
+  </div>
+
 </div>

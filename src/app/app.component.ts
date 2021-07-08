@@ -32,4 +32,20 @@ export class AppComponent {
     this.serverElements[0].name = 'Changed';
   }
 
+
+
+  //assisgment-2
+  
+  oddNumber: number[] = [];
+  evenNumber: number[] = [];
+
+  onIntervalFired(fireNumber:number){
+    if(fireNumber % 2 === 0){
+      this.evenNumber.push(fireNumber)
+    }else{
+      this.oddNumber.push(fireNumber)
+    }
+  }
+
+
 }

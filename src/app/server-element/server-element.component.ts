@@ -9,7 +9,7 @@ export class ServerElementComponent implements OnInit, OnChanges, DoCheck, After
   
   @Input('srvElement') element : { type: string; name: string; content: string; };
   @Input() name:string;
-  @ContentChild('contentParagraph', {static: true}) contentParagraph:ElementRef;
+  @ContentChild('contentParagraph', {static: true}) contentParagraph:ElementRef; // static:true means it give first element like there is 3 p-tag it takes only first p-tag
 
   constructor() { 
     console.log('Constructor called !')
