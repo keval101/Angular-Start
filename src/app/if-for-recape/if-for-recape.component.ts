@@ -15,5 +15,6 @@ export class IfForRecapeComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  
+  value=10;
 }
