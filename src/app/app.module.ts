@@ -13,6 +13,9 @@ import { GameControlComponent } from './game-control/game-control.component';
 import { OddComponent } from './odd/odd.component';
 import { EvenComponent } from './even/even.component';
 import { IfForRecapeComponent } from './if-for-recape/if-for-recape.component';
+import { BasicHighLightDirective } from './basic-directive/basic-high-light.directive';
+import { BetterHighLightDirective } from './better-directive/better-high-light.directive';
+import { UnlessDirective } from './unless.directive';
 
 @NgModule({
   declarations: [
@@ -27,6 +30,9 @@ import { IfForRecapeComponent } from './if-for-recape/if-for-recape.component';
     OddComponent,
     EvenComponent,
     IfForRecapeComponent,
+    BasicHighLightDirective,
+    BetterHighLightDirective,
+    UnlessDirective,
   ],
   imports: [
     BrowserModule,
