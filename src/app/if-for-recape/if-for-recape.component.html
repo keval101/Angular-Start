@@ -1,0 +1,10 @@
+<button class="btn btn-primary mt-3" (click)="Oddbtn = !Oddbtn">Add Even or Add Odd</button>
+
+<ul class="list-group mt-3">
+    <div *ngIf = "Oddbtn">
+        <li class="list-group-item" *ngFor = " let odd of oddNumbers" [ngClass]="{odd : odd % 2 > 0}"> {{odd}} </li>
+    </div>
+    <div *ngIf = "!Oddbtn">
+        <li class="list-group-item" *ngFor = " let even of evenNumbers"  [ngClass]="{even : even % 2 === 0}"> {{even}} </li>
+    </div>
+</ul>
